@@ -1,8 +1,7 @@
 const port = parseInt(Deno.env.get("PORT") ?? "8080");
 
-const handler = (request: Request): Response => {
-    const body = `Your user-agent is:\n\n${request.headers.get("user-agent") ?? "Unknown"
-        }`;
+const handler = (_request: Request): Response => {
+    const body = `Hello ${port}`;
 
     return new Response(body, { status: 200 });
 };
