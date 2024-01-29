@@ -1,7 +1,7 @@
 const port = parseInt(Deno.env.get("PORT") ?? "8080");
 
 const handler = (_request: Request): Response => {
-    const body = `Hello ${port}`;
+    const body = `Hello lulo ${port}`;
 
     return new Response(body, { status: 200 });
 };

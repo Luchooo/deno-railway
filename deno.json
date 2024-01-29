@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch index.ts",
-    "start": "deno run --allow-all index.ts"
+    "dev": "deno run --watch main.ts",
+    "start": "deno run --allow-all main.ts"
   }
 }
